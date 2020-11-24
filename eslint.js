@@ -6,6 +6,7 @@ module.exports = {
   rules: {
     curly: ['error', 'multi-line'],
     'import/no-dynamic-require': 'off',
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     'jsx-a11y/anchor-is-valid': 'off',
     'no-new': 'off',
     'prettier/prettier': ['error'],
