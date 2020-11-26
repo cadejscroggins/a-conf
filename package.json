@@ -3,6 +3,14 @@
   "name": "a-conf",
   "license": "MIT",
   "homepage": "https://github.com/cadejscroggins/a-conf#readme",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "babel.js",
+    "eslint.js",
+    "next.js",
+    "prettier.js"
+  ],
   "dependencies": {
     "app-root-path": "^3.0.0",
     "babel-eslint": "^10.1.0",
