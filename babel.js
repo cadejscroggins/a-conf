@@ -1,4 +1,4 @@
 module.exports = {
-  plugins: ['inline-react-svg', 'react-optimized-image/plugin'],
+  plugins: ['inline-react-svg'],
   presets: ['next/babel'],
 };
