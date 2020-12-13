@@ -2,7 +2,7 @@
   "version": "0.1.5",
   "name": "a-conf",
   "license": "MIT",
-  "homepage": "https://github.com/cadejscroggins/a-conf#readme",
+  "homepage": "https://github.com/cadejscroggins/a-conf",
   "files": [
     "LICENSE",
     "README.md",
@@ -11,10 +11,15 @@
     "next.js",
     "prettier.js"
   ],
+  "scripts": {
+    "format": "prettier --ignore-path .gitignore --write \"**/*.{js,json,graphql,md}\"",
+    "lint": "eslint --ignore-path .gitignore \"**/*.js\""
+  },
   "dependencies": {
     "app-root-path": "^3.0.0",
     "babel-eslint": "^10.1.0",
     "babel-plugin-inline-react-svg": "^1.1.2",
+    "core-js": "^3.8.1",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-import": "^2.22.1",
@@ -22,12 +27,24 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "next-transpile-modules": "^4.1.0"
+    "next-compose-plugins": "^2.2.1",
+    "next-optimized-images": "^3.0.0-canary.10",
+    "next-transpile-modules": "^4.1.0",
+    "raw-loader": "^4.0.2"
   },
   "peerDependencies": {
     "@babel/core": "^7",
     "eslint": "^7",
     "next": "^10",
     "prettier": "^2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "eslint": "^7.15.0",
+    "next": "^10.0.3",
+    "prettier": "^2.2.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "webpack": "^5.10.1"
   }
 }
