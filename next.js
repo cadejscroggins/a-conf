@@ -12,5 +12,6 @@ module.exports = withComposePlugins(
   {
     devIndicators: { autoPrerender: false },
     env: cdkOutputs[Object.keys(cdkOutputs)[0]],
+    images: { domains: ['source.unsplash.com'] },
   }
 );
