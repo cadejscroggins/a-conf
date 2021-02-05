@@ -1,7 +1,7 @@
 module.exports = {
   env: { browser: true },
   extends: ['airbnb', 'prettier', 'prettier/react'],
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
   plugins: ['prettier'],
   rules: {
     curly: ['error', 'multi-line'],
