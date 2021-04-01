@@ -10,4 +10,5 @@ const cdkOutputs = cdkOutputsExist ? require(cdkOutputsFile) : {};
 module.exports = withComposePlugins([withTranspileModules], {
   devIndicators: { autoPrerender: false },
   env: cdkOutputs[Object.keys(cdkOutputs)[0]],
+  future: { webpack5: true },
 });
