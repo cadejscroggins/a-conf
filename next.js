@@ -2,7 +2,11 @@ const appRootPath = require('app-root-path');
 const fs = require('fs');
 
 const withComposePlugins = require('next-compose-plugins');
-const withTranspileModules = require('next-transpile-modules')(['a-uik']);
+
+const withTranspileModules = require('next-transpile-modules')([
+  'a-help',
+  'a-uik',
+]);
 
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
