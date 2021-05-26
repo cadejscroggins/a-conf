@@ -1,8 +1,13 @@
 module.exports = {
-  env: { browser: true },
-  extends: ['airbnb', 'prettier'],
+  env: { browser: true, 'jest/globals': true },
+  extends: [
+    'airbnb',
+    'prettier',
+    'plugin:jest/recommended',
+    'plugin:jest/style',
+  ],
   parser: '@babel/eslint-parser',
-  plugins: ['prettier'],
+  plugins: ['prettier', 'jest'],
   rules: {
     curly: ['error', 'multi-line'],
     'import/no-dynamic-require': 'off',
