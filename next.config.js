@@ -21,5 +21,6 @@ module.exports = withComposePlugins(
   {
     devIndicators: { autoPrerender: false },
     env: cdkOutputs[Object.keys(cdkOutputs)[0]],
+    eslint: { ignoreDuringBuilds: true },
   }
 );
