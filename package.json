@@ -8,7 +8,7 @@
     "README.md",
     "babel.js",
     "eslint.js",
-    "next.js",
+    "next.config.js",
     "prettier.js"
   ],
   "scripts": {
